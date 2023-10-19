@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" type = "text/css" href = "task1-design.css">
+        <meta name = "viewport" content = "width=device-width, initiale-scale= 1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&family=Sofia+Sans:wght@900&display=swap" rel="stylesheet">
+        <title>
+            Task 1
+        </title>
+    </head>
+
+    <body>
+        <div class = "bar-container">
+            <nav class = "navbar">
+                <div id = "title"><img src = "crown.PNG" width = 30 ><b>KING</b></div>
+                <div class = "menu-toggle" id = "mobile-menu" onclick="myFunction(this)">
+                    <div class = "bar1"></div>
+                    <div class = "bar2"></div>
+                    <div class = "bar3"></div>
+                </div>
+                <ul class = "nav-menu" >
+                    <li><a href = "#" class = "nav-link">Home</a></li>
+                    <li><a href = "#" class = "nav-link">Shop</a></li>
+                    <li><a href = "#" class = "nav-link">Contact us</a></li>
+                    <li><a href = "#" class = "nav-link special">Sign up</a></li> 
+                </ul> 
+            </nav>
+        </div>
+        <div class = "row">
+            <font size = +1>
+                <div class = "column">
+                    <div class = "left">
+                        <h1 id = "main"><b> Exquisite Whatches </b></h1>
+                        <h2><b> Choose Luxury,<span id = "sub-header"> Choose us</span> </b></h2>
+        
+                        <p> Discover the perfet Watch for every Occasion<br>
+                            and Elevate Your Style with Timeless Elegance<br>
+                            and Precision Craftsmanship - watch
+                        </p>
+                        <h1 id = "price"><b> $4300.00 </b></h1>    
+                    </div>
+                    <div class = "right" >
+                        <img src = "watch_tissot.png" alt = "tissot-watch" id = "immagine" >
+                    </div>
+                </div> 
+            </font>
+        </div>
+        <div class="footer">
+            <div class = "website">
+                <a href = "https://facebook.com"> <img src = "logoF.png" width = 30></a>
+                <a href = "https://twitter.com"><img src = "logoT.png" width = 30></a>
+                <a href = "https://youtube.com"><img src = "logoY.png" width = 30 ></a>
+            </div>
+            <div>
+                <p class = "end">
+                    © 2023 Class Technologies Inc. 
+                </p>
+            </div>
+        </div>
+        <script>
+            const menu = document.querySelector("#mobile-menu");
+            const menuLink = document.querySelector(".nav-menu");
+            const outpage = document.querySelector(".row");
+            function myFunction(){
+                menu.classList.toggle("change");
+                menuLink.classList.toggle("active");
+                outpage.classList.toggle("is-active");
+            }
+        </script>
+        
+    </body>
+</html>
